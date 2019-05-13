@@ -1,25 +1,75 @@
-# Welcome to Jekyll!
+# Basic
+title: 梓枫
+subtitle: 个人站
+description: 欢迎来到我的个人站~
+# 头像里面的标题
+avatarTitle: tuyaliang
+# 头像里面的描述
+avatarDesc: 人工智能/嵌入式/生活记录
+url: "http://tuyaliang.github.io"
+
+# Comment
+comment:
+    disqus: leopard
+    # gitment: xxx // 需要修改 comments.html中的client_id和client_secret
+    # uyan: 2143225  # 有言id,登录有言官网申请
+
+# Social
+social:
+    weibo: 1995598557
+    github: tuyaliang
+    # zhihu: panpanleopard
+    # juejin: xxx
+    # jianshu: 2ada30d8d0f7
+    # twitter: 
+    mail: tuyaliang@163.com
+
+
+# 百度统计 
+# 使用博客模板请去掉或者更换 id 
+baidu:
+    id: xxxx  
+
+# Google Analytics
+# 使用博客模板请去掉或者更换 id
+ga:
+    id: xxxx  
+    host: auto  
+
+
+# 《----------------- 上面的信息修改成你自己的 ---------------------------》
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+#
+#  _post/ 下的文章更换成你自己的文章
+#  帮忙star一下，感谢~😆 地址： https://github.comtuyaliang/tuyaliang.github.io
+#
+#
+# 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
 
-# Site settings
-title: Tuyaliang's Blog
-email: tuyaliang@163.com
-description: '记录生活' # write a nice description for your blog
-baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://tuyaliang.github.io' # the base hostname & protocol for your site http://www.example.com
-# google_analytics: 'UA-XXXXXX-X'
-# twitter_username: 'twitter_tuyaliang'
 
-# Build settings
-markdown: kramdown
-
-permalink: '/:title/'
+permalink: /:year/:month/:title/
+# Format
 highlighter: rouge
 
-gems: [jekyll-paginate]
+textColor: #FF0000
 
-paginate: 100
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: clear
+
+# The blog button should not be removed.
+blog_button:
+    title: 博客主页
+
+# Navigation buttons in the front page.s
+nav:
+    - {title: 所有文章, description: archive, url: '/archive'}   
+    - {title: 标签, description: tags, url: '/tags'}      
+    - {title: 关于我, description: about, url: '/about'}      
+    
+
+# Pagination
+gems: [jekyll-paginate,jekyll-sitemap]
+paginate: 20
+paginate_path: "page/:num/"
+
+
